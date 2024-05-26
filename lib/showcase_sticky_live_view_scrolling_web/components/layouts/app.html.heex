@@ -1,0 +1,13 @@
+<main>
+  <div class="flex h-screen">
+    <div class="grow bg-red-100">
+      <%= live_render(@socket, ShowcaseStickyLiveViewScrollingWeb.NavbarLive,
+        id: "navbar",
+        sticky: true
+      ) %>
+    </div>
+    <div class="grow bg-blue-50">
+      <%= @inner_content %>
+    </div>
+  </div>
+</main>
